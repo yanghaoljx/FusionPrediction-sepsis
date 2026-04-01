@@ -60,11 +60,3 @@ python main.py -device mps -batch_size 20 -lr 5e-5 -epochs 100 -early_stop 10
 ## 常见问题
 - 如果显存不足或训练失败，尝试减小 `-batch_size` 或切换到 `cpu`。
 - 若使用 Mac 的 MPS，请确保 PyTorch 对 MPS 的支持和你的系统兼容。
-- 若 notebook 中的 tokenizer 或 modelscope 调用失败，请先安装并配置 `modelscope` 与相应模型依赖。
-
-## 下一步建议
-- （可选）添加 `requirements.txt` 或 `environment.yml` 以便复现环境。
-- 若希望统一 checkpoint 格式，考虑在 `main.py` 中改为保存包含键（例如 `{"model_state_dict": model.state_dict()}`）的字典，或在加载端做兼容处理。
-
----
-如需我为仓库生成 `requirements.txt`、统一 checkpoint 保存/加载示例，或把 README 翻译为英文版，我可以继续帮你完成。
