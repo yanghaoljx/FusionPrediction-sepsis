@@ -9,7 +9,8 @@
 - `token_explain.ipynb`：用于对输入 token 做 Integrated Gradients / SHAP 可视化的 notebook。
 
 更多文件请查看仓库根目录。
-
+![Image 1](github1.png)
+![Image 2](github2.png)
 ## 环境依赖
 - Python 3.8+
 - PyTorch
